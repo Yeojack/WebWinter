@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자 야구 게임</title>
+    <style>
+      body {
+        font-family: "Malgun Gothic", "Arial", sans-serif;
+        background-color: #222;
+        color: #eee;
+        padding: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #87ceeb;
+      }
+      h3 {
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+        margin-top: 20px;
+      }
+      #guess-input {
+        padding: 10px;
+        font-size: 1.2em;
+        border: 1px solid #444;
+        background-color: #333;
+        color: #eee;
+        width: 100px;
+        text-align: center;
+      }
+      #submit-button,
+      #reset-button {
+        padding: 10px 15px;
+        font-size: 1.2em;
+        margin-left: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      #result-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 15px;
+      }
+      #result-list li {
+        background-color: #333;
+        padding: 8px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+      }
+      #message {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #ffeb3b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>⚾ 숫자 야구 게임</h1>
+    <p>3자리 숫자를 입력하세요 (1~9, 중복 불가):</p>
+    <div>
+      <input type="text" id="guess-input" maxlength="3" autofocus />
+      <button id="submit-button">제출</button>
+    </div>
+
+    <div id="message">게임을 시작합니다!</div>
+
+    <h3>시도 기록</h3>
+    <ul id="result-list"></ul>
+
+    <button id="reset-button" style="display: none">다시 시작</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
