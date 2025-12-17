@@ -1,0 +1,21 @@
+{
+<<<<<<< HEAD
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 120,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "all"
+=======
+  "arrowParens": "always",
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "bracketSpacing": true
+>>>>>>> 86fc802aab16986b6f89f0fdd11ae5f89cb74862
+}

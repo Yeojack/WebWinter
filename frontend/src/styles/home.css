@@ -1,0 +1,29 @@
+.home {
+  padding: 16px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2칸 */
+  gap: 16px; /* 카드 사이 간격 */
+  align-items: stretch;
+}
+
+.home-item {
+  background: #fff;           /* 필요 없으면 제거 */
+  border: 1px solid #e5e7eb;  /* 필요 없으면 제거 */
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 360px;          /* 차트 높이 균일하게 */
+  overflow: hidden;
+}
+
+/* 화면 좁아지면 1열로 */
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-item {
+    min-height: 320px;
+  }
+}

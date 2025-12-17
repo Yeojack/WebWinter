@@ -1,0 +1,51 @@
+CREATE TABLE public.product (
+	region text NULL,
+	mpe_category_name text NULL,
+	mpe_code int4 NULL,
+	num_establishments int4 NULL,
+	num_employees int4 NULL,
+	value_added_million_krw int8 NULL,
+	production_amount_million_krw int8 NULL,
+	shipment_amount_million_krw int8 NULL,
+	inventory_amount_million_krw int8 NULL
+);
+
+CREATE TABLE public.market (
+	"year" int4 NOT NULL,
+	semiconductor_production_trillion_krw numeric(10, 2) NULL,
+	semiconductor_market_share_pct numeric(5, 2) NULL,
+	semiconductor_exports_100m_usd numeric(10, 2) NULL,
+	semiconductor_export_growth_pct numeric(5, 2) NULL,
+	semiconductor_imports_100m_usd numeric(10, 2) NULL,
+	semiconductor_import_growth_pct numeric(5, 2) NULL,
+	dram_price_usd numeric(10, 2) NULL,
+	display_production_trillion_krw numeric(10, 2) NULL,
+	display_market_share_pct numeric(5, 2) NULL,
+	display_exports_100m_usd numeric(10, 2) NULL,
+	display_export_growth_pct numeric(5, 2) NULL,
+	display_imports_100m_usd numeric(10, 2) NULL,
+	display_import_growth_pct numeric(5, 2) NULL,
+	lcd_average_price_usd numeric(10, 2) NULL,
+	CONSTRAINT market_pkey PRIMARY KEY (year)
+);
+
+CREATE TABLE public.export (
+	year_month varchar(7) NOT NULL,
+	semiconductor_100m_usd numeric NULL,
+	semiconductor_yoy_change_pct numeric NULL,
+	memory_100m_usd numeric NULL,
+	memory_yoy_change_pct numeric NULL,
+	memory_dram_100m_usd numeric NULL,
+	memory_dram_yoy_change_pct numeric NULL,
+	memory_nand_100m_usd numeric NULL,
+	memory_nand_yoy_change_pct numeric NULL,
+	memory_mcp_100m_usd numeric NULL,
+	memory_mcp_yoy_change_pct numeric NULL,
+	system_semiconductor_100m_usd numeric NULL,
+	system_semiconductor_yoy_change_pct numeric NULL,
+	discrete_devices_100m_usd numeric NULL,
+	discrete_devices_yoy_change_pct numeric NULL,
+	display_panel_100m_usd numeric NULL,
+	display_panel_yoy_change_pct numeric NULL,
+	CONSTRAINT export_pkey PRIMARY KEY (year_month)
+);

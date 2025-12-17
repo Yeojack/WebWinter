@@ -1,0 +1,29 @@
+/* src/components/common/DbConnect.module.css */
+
+.dbConnectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  gap: 8px;
+}
+
+.button {
+  border: none;
+  padding: 8px 16px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+  background-color: #2563eb;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+}
+
+.dbConnectMsg {
+  font-size: 14px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+}

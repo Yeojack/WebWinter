@@ -1,0 +1,11 @@
+.graph-container {
+  padding: 24px;
+}
+
+.graph-header {
+  margin-bottom: 16px;
+}
+
+.graph-body {
+  background: #fff;
+}
